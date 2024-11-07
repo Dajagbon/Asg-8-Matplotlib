@@ -42,37 +42,37 @@ The dataset also includes the species of each flower, which can be one of three 
 ## Visualizations
 
 ### Loan Dataset Visualizations
-#### `plot_loan_grade_distribution(loan_data)`
-- **Purpose**: Creates a bar plot showing the distribution of loan grades.
-- **Parameters**: 
-  - `loan_data` (DataFrame): A pandas DataFrame containing the loan data.
-- **Returns**: None
+By running these code snippets, you will get three informative visualizations:
+
+A histogram showing the distribution of customer ages.
+
+A box plot displaying loan amounts grouped by loan intents.
+
+A bar plot showing the count of each loan grade. 
 
 ### Iris Dataset Visualizations
 #### Pair Plot
 - **Purpose**: Creates a pair plot to visualize the relationships between features in the Iris dataset.
-- **Code**:
-  ```python
-  sns.pairplot(iris_df, hue='species', markers=["o", "s", "D"])
-  plt.suptitle('Pair Plot of Iris Dataset', y=1.02)
-  plt.show()
 
-Box Plaot
-Purpose: Creates a box plot to visualize the distribution of sepal length by species.
+#### Box Plot
+- **Purpose**: Creates a box plot to visualize the distribution of sepal length by species.
 
 
-Violin Plot
-Purpose: Creates a violin plot to visualize the distribution of petal length by species.
+#### Violin Plot
+- **Purpose**: Creates a violin plot to visualize the distribution of petal length by species.
 
-Usage
+**Usage**: 
 1. Ensure you have the required libraries installed:
-pip install pandas matplotlib seaborn scikit-learn
+   
+pip install pandas matplotlib seaborn sci-kit-learn
 
-2. Load the data and generate visualizations by running the Matplotlib.py script: python Matplotlib.py
+3. Load the data and generate visualizations by running the Matplotlib.py script:
+   
+python Matplotlib.py
 
 ## Limitations
 The project currently includes visualizations for the distribution of loan grades and various visualizations for the Iris dataset. Additional visualizations can be added to provide more insights into the data.
-The dataset file path for the loan dataset is hardcoded. It can be modified to accept user input or configuration files for better flexibility.
+The loan dataset file path is hardcoded. However, it can be modified to accept user input or configuration files for better flexibility.
 
 ## Conclusion
 This project provides a basic framework for visualizing loan data and the Iris dataset. It can be extended to include more complex analyses and visualizations to gain deeper insights into the datasets.
