@@ -45,12 +45,15 @@ The dataset also includes the species of each flower, which can be one of three 
 By running these code snippets, you will get three informative visualizations:
 
 **A histogram showing the distribution of customer ages.**
+
 Distribution of Customer Ages: The histogram shows the age distribution of customers. Most customers are within a certain age range, with fewer customers at the extreme young and old ends of the spectrum. The peak indicates the most common age group among the customers.
 
 **A box plot displaying loan amounts grouped by loan intents.**
+
 Interest Rate Distribution by Loan Grade: The boxplot illustrates how interest rates vary across different loan grades. Higher loan grades tend to have lower interest rates, while lower loan grades are associated with higher interest rates. This relationship highlights the impact of loan grades on the cost of borrowing.
 
 **A bar plot showing the count of each loan grade.**
+
 Distribution of Loan Grades: The bar plot reveals the frequency of each loan grade within the dataset. It shows which loan grades are more common among the customers, with some grades being more prevalent than others. This distribution helps understand the overall quality of the loan portfolio.
 
 ### Iris Dataset Visualizations
