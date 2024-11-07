@@ -1,4 +1,3 @@
-# Asg-8-Matplotlib
 # Data Visualization Project
 
 ## Purpose
