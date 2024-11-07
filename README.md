@@ -1,40 +1,58 @@
 # Asg-8-Matplotlib
-# Loan Data Visualization Project
+# Data Visualization Project
 
 ## Purpose
-The purpose of this project is to perform visual analysis on a loan dataset. The dataset contains various attributes related to loans and customers, such as customer age, income, loan amount, interest rate, and loan grade. The visualizations help in understanding the distribution and relationships between these attributes.
+This project aims to perform visual analysis on different datasets, including a loan dataset and the Iris dataset. The visualizations help in understanding the distribution and relationships between various attributes in these datasets.
 
 ## Project Structure
 The project consists of the following files:
 - `Matplotlib.py`: Contains the code for generating visualizations using Matplotlib and Seaborn libraries.
 - `LoanDataset - LoansDatasest.csv`: The dataset file containing loan data.
 
-## Class Design and Implementation
-This project does not use a class-based design. Instead, it uses functions to load data and generate visualizations. Below is an explanation of the main functions and their attributes:
+## Datasets
 
-### Functions
+### Loan Dataset
+The loan dataset contains various attributes related to loans and customers, such as:
+- `customer_id`
+- `customer_age`
+- `customer_income`
+- `home_ownership`
+- `employment_duration`
+- `loan_intent`
+- `loan_grade`
+- `loan_amnt`
+- `loan_int_rate`
+- `term_years`
+- `historical_default`
+- `cred_hist_length`
+- `current_loan_status`
 
-#### `load_data(file_path)`
-- **Purpose**: Loads the loan data from a CSV file.
-- **Parameters**: 
-  - `file_path` (str): The path to the CSV file.
-- **Returns**: 
-  - `loan_data` (DataFrame): A pandas DataFrame containing the loan data.
+### Iris Dataset
+The Iris dataset is a classic dataset in machine learning and statistics. It contains 150 samples of iris flowers, each described by four features:
+- `sepal length (cm)`
+- `sepal width (cm)`
+- `petal length (cm)`
+- `petal width (cm)`
 
+The dataset also includes the species of each flower, which can be one of three types:
+- `setosa`
+- `versicolor`
+- `virginica`
+
+## Visualizations
+
+### Loan Dataset Visualizations
 #### `plot_loan_grade_distribution(loan_data)`
 - **Purpose**: Creates a bar plot showing the distribution of loan grades.
 - **Parameters**: 
   - `loan_data` (DataFrame): A pandas DataFrame containing the loan data.
 - **Returns**: None
 
-### Attributes
-- `loan_data`: A pandas DataFrame containing the loan data loaded from the CSV file.
-
-### Methods
-- `load_data`: Loads the loan data from the specified CSV file.
-- `plot_loan_grade_distribution`: Generates a bar plot for the distribution of loan grades.
-
-## Usage
-1. Ensure you have the required libraries installed:
-   ```bash
-   pip install pandas matplotlib seaborn
+### Iris Dataset Visualizations
+#### Pair Plot
+- **Purpose**: Creates a pair plot to visualize the relationships between features in the Iris dataset.
+- **Code**:
+  ```python
+  sns.pairplot(iris_df, hue='species', markers=["o", "s", "D"])
+  plt.suptitle('Pair Plot of Iris Dataset', y=1.02)
+  plt.show()
